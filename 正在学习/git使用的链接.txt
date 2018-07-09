@@ -1,0 +1,6 @@
+https://blog.csdn.net/baidu_25537855/article/details/52451816
+
+将远程仓库地址修改为新的远程仓库地址
+git remote remove origin
+
+git remote add origin【new_remote_repository_address】
