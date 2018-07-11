@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void updateByPrimaryKeySelective(UUser uuser) {
 		// TODO Auto-generated method stub
-		uuserdao.
+		//uuserdao.
 	}
 	
 }
