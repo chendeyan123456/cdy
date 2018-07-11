@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up Login</title>
-<link rel="stylesheet" href="localhost:8080/shiroDemo/css/style.css">
+<link rel="stylesheet" href="${basePath}/css/style.css">
+<script src="${basePath}/js/jquery/jquery1.8.3.min.js"></script>
 </head>
 
 <body>
@@ -34,8 +35,8 @@
         <div class="cont_img_back_"> <img src="po.jpg" alt="" /> </div>
         <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
           <h2>LOGIN</h2>
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input id="text" type="text" placeholder="Email" />
+          <input id="password" type="password" placeholder="Password" />
           <button class="btn_login" onClick="cambiar_login()">LOGIN</button>
         </div>
         <div class="cont_form_sign_up"> <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
@@ -43,7 +44,7 @@
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="User" />
           <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
+          <input type="password" placeholder="Confirm Password />
           <button class="btn_sign_up" onClick="cambiar_sign_up()">SIGN UP</button>
         </div>
       </div>
@@ -51,7 +52,7 @@
   </div>
 </div>
 
-<script src="localhost:8080/shiroDemo/js/index.js"></script>
+<script src="${basePath}/js/index.js"></script>
 <div style="text-align:center;">
 </div>
 </body>

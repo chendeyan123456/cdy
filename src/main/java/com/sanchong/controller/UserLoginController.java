@@ -28,7 +28,12 @@ public class UserLoginController {
 		return new ModelAndView("/user/login");
 	}
 	
-	  
+	@RequestMapping(value="/loginSubmit",method=RequestMethod.GET)
+	public ModelAndView loginSubmit(){
+		
+		//跳转到登录页面
+		return new ModelAndView("/user/login");
+	}
 	    /**  
 	    * @Title: register  
 	    * @Description: 跳转到注册页面

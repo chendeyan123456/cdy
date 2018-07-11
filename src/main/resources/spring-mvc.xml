@@ -19,10 +19,10 @@
 	<context:component-scan base-package="com.sanchong.controller" />
 	
  	<mvc:annotation-driven  /><!-- cache-period="315360000" -->
-<!-- 	<mvc:resources mapping="/images/**" location="/images/" />
+ 	<mvc:resources mapping="/images/**" location="/images/" />
 	<mvc:resources mapping="/demo/**" location="/demo/" />
 	<mvc:resources mapping="/css/**" location="/css/" />
-	<mvc:resources mapping="/js/**" location="/js/" /> -->
+	<mvc:resources mapping="/js/**" location="/js/" /> 
 	
 	
 	
@@ -70,7 +70,7 @@
 	<!-- 配置freeMarker视图解析器 -->
 	<bean id="viewResolverFtl"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-		<!-- <property name="viewClass" value="com.sojson.core.freemarker.extend.FreeMarkerViewExtend" />-->
+		 <property name="viewClass" value="com.sanchong.core.freemark.FreeMarkerViewExtend" />
 		<!-- 把Freemarker 扩展一下，把相关属性加入进去。。。 -->
 		<property name="contentType" value="text/html; charset=utf-8" />
 		<property name="cache" value="true" />
@@ -108,8 +108,8 @@
 				<prop key="whitespace_stripping">true</prop>
 				<prop key="auto_import">
 					<!-- 自动装载，引入Freemarker，用于Freemarker Macro引入 -->
-					/common/config/top.ftl as _top,
-					/common/config/left.ftl as _left
+				<!-- 	/common/config/top.ftl as _top,
+					/common/config/left.ftl as _left-->
 				</prop>
 			</props>
 		</property>
